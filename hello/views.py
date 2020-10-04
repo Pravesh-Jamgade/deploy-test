@@ -9,6 +9,9 @@ def index(request):
     return render(request, "index.html")
 
 
+def hello(request):
+	return HttpResponse('Hello, World')
+	
 def db(request):
 
     greeting = Greeting()
